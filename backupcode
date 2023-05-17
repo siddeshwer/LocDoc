@@ -1,0 +1,583 @@
+ <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Full Name</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p id="patient_name" class="text-muted mb-0">Johnatan Smith</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Email</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p id="patient_email" class="text-muted mb-0">example@example.com</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Phone</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p id="patient_phone" class="text-muted mb-0">(097) 234-5678</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Address</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p id="patient_address" class="text-muted mb-0">Bay Area, San Francisco, CA</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Blood Group</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p id="patient_blood_group"class="text-muted mb-0">A+</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">D.O.B</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p id="patient_dob" class="text-muted mb-0">01-01-1990</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Aadhar No</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p id="patient_aadhar"class="text-muted mb-0">123456789012</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+         //Appointment Table
+         <!DOCTYPE html>
+         <!--suppress ALL -->
+         <html lang="en">
+
+         <head>
+             <meta charset="utf-8">
+             <title>LocDoc | Profile</title>
+             <meta content="width=device-width, initial-scale=1.0" name="viewport">
+             <meta content="Free HTML Templates" name="keywords">
+             <meta content="Free HTML Templates" name="description">
+
+             <!-- Favicon -->
+             <link href="img/favicon.ico" rel="icon">
+
+             <!-- Google Web Fonts -->
+             <link rel="preconnect" href="https://fonts.gstatic.com">
+             <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+             <!-- Icon Font Stylesheet -->
+             <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+             <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+             <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+             <!-- Libraries Stylesheet -->
+             <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+             <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+             <!-- Customized Bootstrap Stylesheet -->
+             <link href="css/bootstrap.min.css" rel="stylesheet">
+
+             <!-- Template Stylesheet -->
+             <link href="css/style.css" rel="stylesheet">
+
+                <style>.table {
+                    border-spacing: 0 10px;
+                    border-collapse: separate;
+                    table-layout: fixed;
+                    width: 100%;
+                    word-wrap: break-word;
+                    height: 200px;
+                }
+                .table thead tr th,
+                .table thead tr td,
+                .table tbody tr th,
+                .table tbody tr td {
+                    vertical-align: middle;
+                    border: none;
+                }
+                .table thead tr th:nth-last-child(1),
+                .table thead tr td:nth-last-child(1),
+                .table tbody tr th:nth-last-child(1),
+                .table tbody tr td:nth-last-child(1) {
+                    text-align: center;
+                }
+                .table tbody tr {
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    border-radius: 5px;
+                    overflow-x: scroll;
+                }
+                .table tbody tr td {
+                    background: #fff;
+                }
+                .table tbody tr td:nth-child(1) {
+                    border-radius: 5px 0 0 5px;
+                }
+                .table tbody tr td:nth-last-child(1) {
+                    border-radius: 0 5px 5px 0;
+                }
+
+                .user-info {
+                    display: flex;
+                    align-items: center;
+                }
+                .user-info__img img {
+                    margin-right: 15px;
+                    height: 55px;
+                    width: 55px;
+                    border-radius: 45px;
+                    border: 3px solid #fff;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                }</style>
+         </head>
+
+         <body>
+         <header></header>
+
+
+         <section style="background-color: #eee;">
+             <div class="container py-5">
+
+
+                 <div class="row">
+                     <div class="col-lg-4">
+                         <div class="card mb-4">
+                             <div class="card-body text-center">
+                                 <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
+                                      class="rounded-circle img-fluid" style="width: 150px;">
+                                 <hr>
+                                 <div class="d-flex justify-content-center mb-2">
+                                     <button type="button" class="btn btn-primary">Subscribe</button>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="card mb-4 mb-lg-0">
+                             <div class="card-body p-0">
+                                 <ul class="list-group list-group-flush rounded-3">
+                                     <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                         <i class="fa fa-address-book-o"></i>
+                                         <p id="patient_name" class="mb-0">Name</p>
+                                     </li>
+                                     <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                         <i class="	fa fa-envelope-o" style="color: #333333;"></i>
+                                         <p id="patient_email" class="mb-0">Email</p>
+                                     </li>
+                                     <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                         <i class="fa fa-phone" style="color: #000000;"></i>
+                                         <p id="patient_phone"class="mb-0">Phone</p>
+                                     </li>
+                                     <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                         <i class="fa fa-map-marker" style="color: #000000;"></i>
+                                         <p id="patient_address" class="mb-0">Address</p>
+                                     </li>
+                                     <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                         <i class="fa fa-birthday-cake" style="color: #000000;"></i>
+                                         <p id="patient_dob" class="mb-0">D.O.B</p>
+                                     </li>
+                                     <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                         <i class="fa fa-heart" style="color: #000000;"></i>
+                                         <p id="patient_blood_group"class="mb-0">Blood Group</p>
+                                     </li> <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                     <i class="fa fa-drivers-license" style="color: #000000;"></i>
+                                     <p id="patient_aadhar"class="mb-0">Aadhar</p>
+                                 </li>
+
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-lg-8">
+                         <div class="row">
+                             <div class="col-lg-12">
+                                 <div class="card mb-4 mb-md-0">
+                                     <div class="container">
+                                         <h3><center>Appointment History</center></h3>
+                                         <table class="table">
+                                             <thead>
+                                             <tr>
+                                                 <th>Patient</th>
+                                                 <th>Status</th>
+                                                 <th>Appointment</th>
+                                                 <th>Phone</th>
+                                                 <th>Doctor</th>
+                                                 <th>Actions</th>
+                                             </tr>
+                                             </thead>
+                                             <tbody>
+                                             <tr>
+                                                 <td>
+                                                     <div class="user-info">
+                                                         <div class="user-info__basic">
+                                                             <h5 id="app_p_name" class="mb-0">Kiran Acharya</h5>
+                                                         </div>
+                                                     </div>
+                                                 </td>
+                                                 <td>
+                                                     <span id="app_status" class="btn btn-primary">Consult</span>
+                                                 </td>
+                                                 <td>
+                                                     <h6 id="app_time" class="mb-0">06:00 PM</h6>
+                                                     <small id="app_date">2 Feb 2021</small>
+                                                 </td>
+                                                 <td>
+                                                     <h6 class="mb-0">+91 9876543215</h6>
+                                                 </td>
+                                                 <td>
+                                                     <h6 id="app_d_name" class="mb-0">Dr. Ananth</h6>
+                                                 </td>
+                                                 <td>
+                                                     <div class="dropdown open">
+                                                         <a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
+                                                             <i class="fa fa-ellipsis-v"></i>
+                                                         </a>
+                                                         <div class="dropdown-menu" aria-labelledby="triggerId1">
+                                                             <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Cancel</a>
+                                                         </div>
+                                                     </div>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td>
+                                                     <div class="user-info">
+                                                         <div class="user-info__basic">
+                                                             <h5 class="mb-0">Kiran Acharya</h5>
+                                                             <p class="text-muted mb-0">28 yrs, Male</p>
+                                                         </div>
+                                                     </div>
+                                                 </td>
+                                                 <td>
+                                                     <span class="btn btn-primary">Revisit</span>
+                                                 </td>
+                                                 <td>
+                                                     <h6 class="mb-0">06:00 PM</h6>
+                                                     <small>2 Feb 2021</small>
+                                                 </td>
+                                                 <td>
+                                                     <h6 class="mb-0">+91 9876543215</h6>
+                                                     <a href="#!"><small>Contact</small></a>
+                                                 </td>
+                                                 <td>
+                                                     <h6 class="mb-0">Dr. Ananth</h6>
+                                                 </td>
+                                                 <td>
+                                                     <div class="dropdown open">
+                                                         <a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
+                                                             <i class="fa fa-ellipsis-v"></i>
+                                                         </a>
+                                                         <div class="dropdown-menu" aria-labelledby="triggerId1">
+                                                             <a class="dropdown-item" href="#"><i class="fa fa-pencil mr-1"></i> Edit</a>
+                                                             <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Delete</a>
+                                                         </div>
+                                                     </div>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td>
+                                                     <div class="user-info">
+                                                         <div class="user-info__basic">
+                                                             <h5 class="mb-0">Kiran Acharya</h5>
+                                                             <p class="text-muted mb-0">28 yrs, Male</p>
+                                                         </div>
+                                                     </div>
+                                                 </td>
+                                                 <td>
+                                                     <span class="btn btn-primary">Consult</span>
+                                                 </td>
+                                                 <td>
+                                                     <h6 class="mb-0">06:00 PM</h6>
+                                                     <small>2 Feb 2021</small>
+                                                 </td>
+                                                 <td>
+                                                     <h6 class="mb-0">+91 9876543215</h6>
+                                                     <a href="#!"><small>Contact</small></a>
+                                                 </td>
+                                                 <td>
+                                                     <h6 class="mb-0">Dr. Ananth</h6>
+                                                 </td>
+                                                 <td>
+                                                     <div class="dropdown open">
+                                                         <a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
+                                                             <i class="fa fa-ellipsis-v"></i>
+                                                         </a>
+                                                         <div class="dropdown-menu" aria-labelledby="triggerId1">
+                                                             <a class="dropdown-item" href="#"><i class="fa fa-pencil mr-1"></i> Edit</a>
+                                                             <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Delete</a>
+                                                         </div>
+                                                     </div>
+                                                 </td>
+                                             </tr>
+                                             </tbody>
+                                         </table>
+                                     </div>
+                                 </div>
+                             </div>
+                             <hr>
+                             <div class="col-lg-12">
+                                 <div class="card mb-4 mb-md-0">
+                                     <div class="container">
+                                         <h3><center>Medical Records</center></h3>
+                                         <table class="table">
+                                             <thead>
+                                             <tr>
+                                                 <th>Patient</th>
+                                                 <th>Status</th>
+                                                 <th>Appointment</th>
+                                                 <th>Phone</th>
+                                                 <th>Doctor</th>
+                                                 <th>Actions</th>
+                                             </tr>
+                                             </thead>
+                                             <tbody>
+                                             <tr>
+                                                 <td>
+                                                     <div class="user-info">
+                                                         <div class="user-info__basic">
+                                                             <h5 class="mb-0">Kiran Acharya</h5>
+                                                             <p class="text-muted mb-0">28 yrs, Male</p>
+                                                         </div>
+                                                     </div>
+                                                 </td>
+                                                 <td>
+                                                     <span class="btn btn-success">Consult</span>
+                                                 </td>
+                                                 <td>
+                                                     <h6 class="mb-0">06:00 PM</h6>
+                                                     <small>2 Feb 2021</small>
+                                                 </td>
+                                                 <td>
+                                                     <h6 class="mb-0">+91 9876543215</h6>
+                                                     <a href="#!"><small>Contact</small></a>
+                                                 </td>
+                                                 <td>
+                                                     <h6 class="mb-0">Dr. Ananth</h6>
+                                                 </td>
+                                                 <td>
+                                                     <div class="dropdown open">
+                                                         <a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
+                                                             <i class="fa fa-ellipsis-v"></i>
+                                                         </a>
+                                                         <div class="dropdown-menu" aria-labelledby="triggerId1">
+                                                             <a class="dropdown-item" href="#"><i class="fa fa-pencil mr-1"></i> Edit</a>
+                                                             <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Delete</a>
+                                                         </div>
+                                                     </div>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td>
+                                                     <div class="user-info">
+                                                         <div class="user-info__basic">
+                                                             <h5 class="mb-0">Kiran Acharya</h5>
+                                                             <p class="text-muted mb-0">28 yrs, Male</p>
+                                                         </div>
+                                                     </div>
+                                                 </td>
+                                                 <td>
+                                                     <span class="btn btn-primary">Revisit</span>
+                                                 </td>
+                                                 <td>
+                                                     <h6 class="mb-0">06:00 PM</h6>
+                                                     <small>2 Feb 2021</small>
+                                                 </td>
+                                                 <td>
+                                                     <h6 class="mb-0">+91 9876543215</h6>
+                                                     <a href="#!"><small>Contact</small></a>
+                                                 </td>
+                                                 <td>
+                                                     <h6 class="mb-0">Dr. Ananth</h6>
+                                                 </td>
+                                                 <td>
+                                                     <div class="dropdown open">
+                                                         <a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
+                                                             <i class="fa fa-ellipsis-v"></i>
+                                                         </a>
+                                                         <div class="dropdown-menu" aria-labelledby="triggerId1">
+                                                             <a class="dropdown-item" href="#"><i class="fa fa-pencil mr-1"></i> Edit</a>
+                                                             <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Delete</a>
+                                                         </div>
+                                                     </div>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td>
+                                                     <div class="user-info">
+                                                         <div class="user-info__basic">
+                                                             <h5 class="mb-0">Kiran Acharya</h5>
+                                                             <p class="text-muted mb-0">28 yrs, Male</p>
+                                                         </div>
+                                                     </div>
+                                                 </td>
+                                                 <td>
+                                                     <span class="btn btn-success">Consult</span>
+                                                 </td>
+                                                 <td>
+                                                     <h6 class="mb-0">06:00 PM</h6>
+                                                     <small>2 Feb 2021</small>
+                                                 </td>
+                                                 <td>
+                                                     <h6 class="mb-0">+91 9876543215</h6>
+                                                     <a href="#!"><small>Contact</small></a>
+                                                 </td>
+                                                 <td>
+                                                     <h6 class="mb-0">Dr. Ananth</h6>
+                                                 </td>
+                                                 <td>
+                                                     <div class="dropdown open">
+                                                         <a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
+                                                             <i class="fa fa-ellipsis-v"></i>
+                                                         </a>
+                                                         <div class="dropdown-menu" aria-labelledby="triggerId1">
+                                                             <a class="dropdown-item" href="#"><i class="fa fa-pencil mr-1"></i> Edit</a>
+                                                             <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Delete</a>
+                                                         </div>
+                                                     </div>
+                                                 </td>
+                                             </tr>
+                                             </tbody>
+                                         </table>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+
+         <footer></footer>
+
+
+             <!-- Back to Top -->
+             <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+             <!-- JavaScript Libraries -->
+             <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+             <script src="lib/easing/easing.min.js"></script>
+             <script src="lib/waypoints/waypoints.min.js"></script>
+             <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+             <script src="lib/tempusdominus/js/moment.min.js"></script>
+             <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+             <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+             <!-- Template Javascript -->
+             <script src="js/main.js"></script>
+             <script src="js/backend.js"></script>
+
+         </body>
+
+         </html>
+
+<div class="wrapper">
+    <div class="title-text">
+        <div class="title login">Login</div>
+        <div class="title signup">Signup</div>
+    </div>
+    <div class="form-container">
+        <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+            <form action="#" class="login" id="login-form">
+                <div class="field">
+                    <input id="user_email" type="text" placeholder="Email Address" required>
+                </div>
+                <div class="field">
+                    <input id="user_password" type="password" placeholder="Password" required>
+                </div>
+                <div class="pass-link"><a href="#">Forgot password?</a></div>
+                <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input id="login-btn" type="submit" value="Login">
+                </div>
+                <div class="signup-link">Not a member? <a href="#signup-form">Signup now</a></div>
+            </form>
+            <form action="#" id="signup-form" class="signup">
+                <div class="field">
+                    <input id="email" type="text" placeholder="Email Address" required>
+                </div>
+                <div class="field">
+                    <input id="password" type="password" placeholder="Password" required>
+                </div>
+                <div class="field">
+                    <input id="password_confirm" type="password" placeholder="Confirm password" required>
+                </div>
+                <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input id="signup-btn" type="submit" value="Signup">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+  <tr>
+                                        <td>
+                                            <div class="user-info">
+                                                <div class="user-info__basic">
+                                                    <h5 id="app_p_name" class="mb-0">Patient Name</h5>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span id="app_status" class="btn btn-primary">Consult</span>
+                                        </td>
+                                        <td>
+                                            <h6 id="app_time" class="mb-0">Time</h6>
+                                            <small id="app_date">Date</small>
+                                        </td>
+                                        <td>
+                                            <h6 class="mb-0"></h6>
+                                        </td>
+                                        <td>
+                                            <h6 id="app_d_name" class="mb-0">Name</h6>
+                                        </td>
+                                        <td>
+                                            <div class="dropdown open">
+                                                <a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true"
+                                                   aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="triggerId1">
+                                                    <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Cancel</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
