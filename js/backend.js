@@ -1,5 +1,5 @@
 //Function to update profile
-fetch("http://localhost:8085/account/1234567890")
+fetch("http://localhost:8088/account/"+sessionStorage.getItem("user"))
     .then(response =>
     {
         return response.json();
@@ -32,7 +32,7 @@ function updatePatientProfile(){
     var patient_address = document.getElementById("patient_address").value;
 
     var settings = {
-        "url": "http://localhost:8085/account/add",
+        "url": "https://locdoc-bknd.onrender.com/account/add",
         "method": "POST",
         "timeout": 0,
         "headers": {
@@ -61,8 +61,9 @@ function updatePatientProfile(){
 
 // Function to convert JSON data to HTML table
 
-
-fetch("http://localhost:8085/appointment/"+sessionStorage.getItem("user"))
+var appointmentURL = "https://locdoc-bknd.onrender.com/appointment/"+sessionStorage.getItem("user");
+console.log(appointmentURL);
+fetch(appointmentURL)
     .then(function(response){
         return response.json();
     })
@@ -100,7 +101,7 @@ fetch("http://localhost:8085/appointment/"+sessionStorage.getItem("user"))
                                                     <i class="fa fa-ellipsis-v"></i>
                                                 </a>
                                                 <div class="dropdown-menu" aria-labelledby="triggerId1">
-                                                    <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Cancel</a>
+                                                    <a class="dropdown-item text-danger" ><i class="fa fa-trash mr-1"></i> Cancel</a>
                                                 </div>
                                             </div>
                                         </td>
