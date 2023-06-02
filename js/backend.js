@@ -1,5 +1,5 @@
 //Function to update profile
-fetch("https://locdoc-bknd.onrender.com/account/"+sessionStorage.getItem("user"))
+fetch("https://locdoc-bknd.onrender.com/account/user/"+sessionStorage.getItem("user"))
     .then(response =>
     {
         return response.json();
